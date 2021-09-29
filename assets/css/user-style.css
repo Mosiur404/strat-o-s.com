@@ -1,0 +1,113 @@
+/* asystem widget start */
+.ass-wrapper {
+  display: flex;
+  justify-content: start;
+  align-items: stretch;
+  width: 100%;
+}
+.ass-wrapper .swiper-wrapper {
+  position: relative;
+}
+
+.ass-wrapper .ass-titles {
+  min-width: 30%;
+  padding: 10px;
+}
+.ass-wrapper .ass-titles h3 {
+  font-size: 2.5rem;
+  margin-bottom: 0.66rem;
+  transition: color 0.3s ease;
+}
+.ass-wrapper .ass-content {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  height: 100%;
+}
+
+.ass-wrapper .ass-content .ass-image img {
+  width: 100%;
+  height: 100%;
+}
+.ass-wrapper .ass-content .ass-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  height: 100%;
+  padding: 10px;
+  max-width: 18rem;
+}
+.ass-wrapper .ass-content .ass-description p {
+  margin-bottom: 20px;
+}
+.ass-wrapper .ass-content .ass-description .ass-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: 10rem;
+  line-height: initial;
+  background: #000;
+}
+
+.ass-wrapper .swiper-slide .pagination-next {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10rem;
+  width: 32px;
+  height: 32px;
+}
+.ass-wrapper h3.sm-title {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .ass-wrapper .ass-content {
+    flex-direction: column;
+  }
+  .ass-wrapper .ass-description {
+    justify-content: start;
+  }
+  .ass-wrapper .ass-titles {
+    display: none;
+  }
+  .ass-wrapper .swiper-slide .pagination-next {
+    display: flex;
+  }
+  .ass-wrapper h3.sm-title {
+    display: block;
+  }
+}
+
+/* asystem widget end*/
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#asystemMobile-slider .swiper-slide {
+  justify-content: space-around;
+}
+
+@media (min-width: 992px) {
+  #asystemMobile-slider .elementor-swiper-button-prev,
+  #asystemMobile-slider .elementor-swiper-button-next {
+    display: none;
+    z-index: 10;
+  }
+}
+#asystemMobile-slider .elementor-swiper-button-prev {
+  left: -7px;
+}
+#asystemMobile-slider .elementor-swiper-button-next {
+  right: -7px;
+}
